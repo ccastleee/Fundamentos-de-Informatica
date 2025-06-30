@@ -65,11 +65,11 @@ def validacion_asiento(asiento):
 
 def total_pasaje(destino, asiento):
     total = 0
-    if destino == 1:
+    if destino == "1":
         total += const.dolores
     else:
         total += const.mdq
-    if asiento == 2:
+    if asiento == "2":
         total += const.semi_cama
     return total
 
