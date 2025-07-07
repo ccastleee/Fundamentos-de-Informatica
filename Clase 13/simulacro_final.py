@@ -107,11 +107,13 @@ def matriz(lista, lista_1, lista_2):
     return matriz
 
 def coincidendia(matriz):
+    encontrado = 0
     nombre = input("Ingrese el nombre de perro: ").capitalize()
     for i in range(len(matriz)):
         if matriz[i][1] == nombre:
-            print(f"Codigo: {matriz[i][0]}, Edad: {matriz[i][2]}")
-    if matriz[i][1] != nombre:
+            print(f"Codigo: {matriz[i][0]}\nNombre: {matriz[i][1]}\nEdad: {matriz[i][2]}")
+            encontrado += 1
+    if encontrado == 0:
         print("No se encontro el nombre.")
 
 codigo = []
